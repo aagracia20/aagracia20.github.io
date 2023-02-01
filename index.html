@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amanda Gracia | Portfolio</title>
+        <!-- <link rel="stylesheet" href="styles/reset.css"> what is this and do we need it? --> 
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/98951f8c09.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header id="header">
+                <h1 class="logo"><span>Amanda</span>Gracia</h1>
+                <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/amanda-gracia/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+                </nav>
+                <div class="toggle" onclick="toggle()"></div>
+        </header>
+
+         <!-- Site Main Content -->
+             <!-- Banner -->
+            <section id="home">
+                <div>
+                    <h1>Having trouble seeing the forest through the trees?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidident ut labore et dolore.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidident ut labore et dolore.
+                    </p>
+                    <a class="button_one" href="#portfolio">View My Work</a>
+                </div>
+            </section>
+
+            <!--<video autoplay loop muted plays-inline class="video-bg">
+                <source src="./img/treess.mp4" type="video/mp4">
+            </video> -->
+
+            <!-- Portfolio -->
+            <section id="portfolio">
+                <div class="heading">
+                    <h1> Portfolio </h1>
+                </div>
+
+                <div class="project-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./img/project1.jpeg">
+                        </div>
+                        <h2>Project 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                        <a class="project_button">View More</a>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./img/project2.jpeg">
+                        </div>
+                        <h2>Project 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                        <a class="project_button" >View More</a>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./img/project3.jpeg">
+                        </div>
+                        <h2>Project 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                        <a class="project_button" >View More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me-->
+            <section id="about">
+                <div>
+                    <h1>About Me</h1>
+                    <div class="about-img">
+                        <img src="./img/ag.jpeg" alt="girl smiling" width="300" height="300"/>
+                    </div>
+
+                    <div class="value">
+                        <h2>I value</h2>
+                        <div class="words">
+                            <span>relevance</span>
+                            <span>engagement</span>
+                            <span>change</span>
+                            <span>results</span>
+                            <span>creativity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidident ut labore et dolore. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidident ut labore et dolore</p>
+                <a href="button button-primary">Learn More</a> <!-- <img src="" alt="" />  -->
+                </div>
+            </section>
+
+            <!-- Contact Me-->
+            <section id="contact">
+                <div>
+                <h3 class="contact">If you would like to chat...</h3> 
+                </div>
+
+            <form class="contact-form">
+
+                <label for="name">
+                    Full Name
+                </label>
+                <input type="text" id="name" placeholder="Full Name">
+
+                <label for="email">
+                    Email Address
+                </label>
+                <input type="email" id="email" placeholder="Email Address">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+                <input type="tel" id="phone" placeholder="Phone Number">
+
+                <label for="date">
+                    Requested Date
+                </label>
+                <input type="date" id="date" placeholder="Requested Date">
+
+                <label for="need">
+                    What is your learning need?
+                </label>
+                <textarea placeholder="Please Explain" id="need"></textarea>
+                <button type="submit" class="button_two">Submit</button>
+            </form>
+            </section>
+        </main>
+
+        <!-- Site Footer -->
+        <footer>
+                <p>Proudly made by Amanda Gracia.</p>
+                <!-- Copyright &copy; 2022. Amanda Gracia. All Rights Reserved. -->
+        </footer>
+        <script type="text/javascript">
+            function toggle(){
+                var header = document.getElementById("header")
+                header.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>
